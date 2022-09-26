@@ -1,0 +1,34 @@
+
+/* 
+Break points for media querys, taken from Bootsrtrap:
+Desktop ≥1200px
+
+Tablet: ≥768px
+
+Mobile: ≥576px
+*/
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5% 0% 5%;
+    background-color: antiquewhite;
+}
+.logo{
+    font-size: large;
+    font-weight: bolder;
+}
+.menu{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
