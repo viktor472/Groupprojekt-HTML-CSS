@@ -13,6 +13,8 @@ body{
     margin: 0%;
     padding: 0%;
 }
+
+/*Navigation-START*/
 nav{
     height: 8vh;
     display: flex;
@@ -27,8 +29,49 @@ nav{
 }
 .menu{
     width: 25%;
+}
+.dropdown-content,a{
+    color: black;
+    text-decoration: none;
+    list-style: none;
     display: flex;
     justify-content: space-between;
+}
+.dropdown{
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+@media only screen and (max-width: 1200px){
+    .menu{
+        width: 5%;
+    }
+    .dropdown{
+        display: block;
+        position: relative;
+    }
+    .menu:active .dropdown-content { display: block; }
+
+    .dropdown-content:hover{display: block;}
+    
+    .dropdown-content{
+        display: flex;
+        display: none;
+        position: absolute;
+        background-color: #fdfdfd;
+        height: 20vh;
+        width: 30vh;
+    }
+    a{
+        margin-top: 5%;
+    }
+        
+    .dropdown-content:active {
+        display: none;   
+    }
 
 }
 
+/*Navigation-END*/
