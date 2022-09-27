@@ -7,11 +7,20 @@ Tablet: ≥768px
 
 Mobile: ≥576px
 */
+/* Fonts-START*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&family=Roboto:ital,wght@1,100&display=swap');
 
+/*To get the fonts insert this into the css:
+font-family: 'Noto Sans Mono', monospace;
+
+font-family: 'Roboto', sans-serif;
+*/
+/* Fonts-END*/
 
 body{
     margin: 0%;
     padding: 0%;
+    font-family: 'Noto Sans Mono', monospace;
 }
 
 /*Navigation-START*/
@@ -22,10 +31,12 @@ nav{
     justify-content: space-between;
     padding: 0% 5% 0% 5%;
     background-color: antiquewhite;
+    font-size: 18px;
+    font-weight: 800;
 }
 .logo{
-    font-size: large;
     font-weight: bolder;
+    font-size: 30px;
 }
 .menu{
     width: 25%;
