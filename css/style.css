@@ -25,7 +25,7 @@ body{
 
 /*Navigation-START*/
 nav{
-    height: 8vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,9 +34,8 @@ nav{
     font-size: 18px;
     font-weight: 800;
 }
-.logo{
-    font-weight: bolder;
-    font-size: 30px;
+#logo{
+    width: 16vh;
 }
 .menu{
     width: 32%;
@@ -50,19 +49,26 @@ nav{
 }
 .dropdown{
     display: none;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 16px;
 }
 .line{
     background-color: black;
-    height: 20%;
+    height: 12%;
     width: 100%;
     border-radius: 2px;
 }
 
 @media only screen and (max-width: 960px){
+    nav{
+        height: 8vh;
+    }
     .menu{
         width: 5%;
+        padding: 0% 4% 0% 4%;
+    }
+    #logo{
+        width: 12vh;
     }
     .dropdown{
         display: block;
@@ -81,10 +87,8 @@ nav{
         left: 0%;
         text-align: center;
         background-color: #ffffff;
-        height: 15%;
-        width: 94%;
-        border-radius: 15px 0px 0px 15px;   
-        padding: 3% 3% 3% 3%;
+        width: 94%;   
+        padding: 3%;
     }
     a{
         display: flex;
