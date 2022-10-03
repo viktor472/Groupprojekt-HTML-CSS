@@ -2,6 +2,7 @@
   padding: 5% 10%;
   display: inline-grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   column-gap: 30px;
 }
 
@@ -12,4 +13,22 @@
 
 .item-title {
   margin-top: 0;
+}
+
+.fa-star {
+  color: #e1ec19;
+}
+
+@media screen and (max-width: 768px) {
+  .item-container {
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    column-gap: 30px;
+  }
+
+  .item-title {
+    margin-top: 2%;
+  }
 }
