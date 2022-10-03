@@ -1,16 +1,9 @@
 
-/* 
-Break points for media querys, taken from Bootsrtrap:
-Desktop ≥1200px
-
-Tablet: ≥768px
-
-Mobile: ≥576px
-*/
 /* Fonts-START*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&family=Roboto:ital,wght@1,100&display=swap');
 
-/*To get the fonts insert this into the css:
+/*
+To get the fonts insert this into the css:
 font-family: 'Noto Sans Mono', monospace;
 
 font-family: 'Roboto', sans-serif;
@@ -35,30 +28,22 @@ nav{
     font-weight: 800;
 }
 #logo{
-    width: 16vh;
+    width: 12vh;
 }
 .menu{
     width: 32%;
 }
-.dropdown-content,a{
+#dropdown-content,a{
+    display: block;
     color: black;
     text-decoration: none;
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
-.dropdown{
+.icon{
     display: none;
-    width: 20px;
-    height: 16px;
 }
-.line{
-    background-color: black;
-    height: 12%;
-    width: 100%;
-    border-radius: 2px;
-}
-
 @media only screen and (max-width: 960px){
     nav{
         height: 8vh;
@@ -67,41 +52,23 @@ nav{
         width: 5%;
         padding: 0% 4% 0% 4%;
     }
-    #logo{
-        width: 12vh;
-    }
-    .dropdown{
-        display: block;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .menu:active .dropdown-content { display: block; }
-
-    .dropdown-content:hover{display: block;}
-    
-    .dropdown-content{
+    #dropdown-content{
         display: none;
         position: absolute;
-        left: 0%;
-        text-align: center;
+        flex-direction: row-reverse;
+        top: 8vh;
+        right: 0%;
+        width: 96%;
+        padding: 0% 2% 0% 2%;
         background-color: #ffffff;
-        width: 94%;   
-        padding: 3%;
     }
-    a{
-        display: flex;
-        justify-content: flex-end;
-        margin: 2% 0% 1% 0%;
+    .box, .box1, .box2{
         font-size: medium;
         font-weight: bold;
     }
-        
-    .dropdown-content:active {
-        display: none;   
+    .icon{
+        display: block;
     }
-
 }
 
 /*Navigation-END*/
