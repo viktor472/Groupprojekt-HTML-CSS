@@ -50,4 +50,8 @@
   .left-side {
     width: 100%;
   }
+
+  .item-title {
+    margin-top: 0;
+  }
 }
