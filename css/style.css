@@ -94,6 +94,15 @@ nav{
   .fa-star {
     color: #e1ec19;
   }
+
+  .footer {
+    text-align: center;
+  }
+
+  hr {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   
   /* Mobile size */
   @media screen and (max-width: 768px) {
