@@ -99,6 +99,19 @@ nav{
     text-align: center;
   }
 
+  .btn-card {
+    display: block;
+    margin-top: 3%;
+    width: 300px;
+    padding: 1%;
+    color: #ffffff;
+    background-color: #000000;
+  }
+  
+  .btn-card:hover{
+    cursor: pointer;
+  }
+
   hr {
     margin-left: 5%;
     margin-right: 5%;
@@ -138,6 +151,14 @@ nav{
   
     .item-title {
       margin-top: 0;
+    }
+
+    .btn-card {
+      display: block;
+      margin-top: 3%;
+      padding: 1%;
+      color: #ffffff;
+      background-color: #000000;
     }
   }
 /* END of Item page CSS */
