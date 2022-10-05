@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cstyle.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <title>NVS Company</title>
+</head>
+<body>
+    <!--Navigation-START -->
+    <nav>
+        <a href="index.html"><img src="img/NVS-Logo-nobg.png" id="logo" /></a>
+        <div class="menu">
+            <div id="dropdown-content">
+                <a class="box" href="index.html">Home</a>
+                <hr>
+                <a class="box1" href="items.html">Shop</a>
+                <hr>
+                <a class="box2" href="#">Contact</a>
+                <hr>
+            </div>
+            <a class="icon" onclick="hamburgmenu()">
+                <i class="fa fa-bars fa-xl"></i>
+              </a>
+        </div>
+    </nav>
+    <!--Navigation-END-->
+    <form action="submit" method="post">
+        <label for="name">Name </label>
+        <input type="text" name="name"><br>
+        <label for="email">Email </label>
+        <input type="email" name="name"><br>
+        <label for="description">Description</label><br>
+        <textarea name="description" id="textarea" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="map">
+        <img src="img/map.png" alt="company address">
+    </div>
+    <!-- Footer -->
+ <hr>
+ <footer>
+   <p class="footer">NVS Company &copy; 2022</p>
+ </footer>
+ <!-- End of Footer -->
+</body>

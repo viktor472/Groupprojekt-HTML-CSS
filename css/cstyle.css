@@ -1,0 +1,144 @@
+/* Fonts-START*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&family=Roboto:ital,wght@1,100&display=swap');
+
+/*
+To get the fonts insert this into the css:
+font-family: 'Noto Sans Mono', monospace;
+
+font-family: 'Roboto', sans-serif;
+*/
+/* Fonts-END*/
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+/*Navigation-START*/
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5% 0% 5%;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#logo{
+    width: 12vh;
+}
+
+.menu{
+    width: 32%;
+}
+
+#dropdown-content,a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    display: none;
+}
+
+/* Index page styles */
+.hero{
+  height: 55vh;
+  background-image: url(img/summer-streach.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 10% 0% 0% 10%;
+}
+
+.hello{
+  font-weight: 900;
+  font-size: xx-large;
+  width: 60vh;
+}
+
+.hello-text{
+  width: 60vh;
+}
+
+.info{
+  padding: 5% 2% 5% 2%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.deal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3% 9% 3% 9%;
+  color: rgb(168, 168, 168);
+}
+
+.deal-text{
+  margin-top: 5vh;
+}
+/* --------------------------------------- */
+
+@media only screen and (max-width: 960px){
+  .hero{
+      height: 60vh;
+  }
+  .info{
+      grid-template-columns: repeat(1,1fr);
+      padding: 10%;
+  }
+  .deal{
+      margin: 5% 0% 5% 0%;
+  }
+  .hello{
+      width: 27vh;
+  }
+  .hello-text{
+      width: 22vh;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 960px){
+    nav{
+        height: 8vh;
+    }
+    .menu{
+        width: 5%;
+        padding: 0% 4% 0% 4%;
+    }
+    #dropdown-content{
+        display: none;
+        position: absolute;
+        flex-direction: row-reverse;
+        top: 8vh;
+        right: 0%;
+        width: 96%;
+        padding: 0% 2% 0% 2%;
+        background-color: #ffffff;
+    }
+    .box, .box1, .box2{
+        font-size: medium;
+        font-weight: bold;
+    }
+    .icon{
+        display: block;
+    }
+}
+
+/*Navigation-END*/
