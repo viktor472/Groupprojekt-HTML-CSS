@@ -59,12 +59,14 @@ nav{
         top: 8vh;
         right: 0%;
         width: 96%;
+        height: 20vh;
         padding: 0% 2% 0% 2%;
         background-color: #ffffff;
     }
     .box, .box1, .box2{
         font-size: medium;
         font-weight: bold;
+        margin-top: 2vh;
     }
     .icon{
         display: block;
