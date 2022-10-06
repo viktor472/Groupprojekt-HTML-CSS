@@ -1,6 +1,7 @@
 .hero{
     height: 55vh;
-    background-image: url("/img/strech.png");
+    background-image: url('/img/strech.png');
+    background-color: #ffffff;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
