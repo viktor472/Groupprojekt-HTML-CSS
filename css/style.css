@@ -11,48 +11,81 @@ font-family: 'Roboto', sans-serif;
 /* Fonts-END*/
 
 body{
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Noto Sans Mono', monospace;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Noto Sans Mono', monospace;
 }
 
 /*Navigation-START*/
 nav{
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0% 5% 0% 5%;
-    background-color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 800;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 5% 0% 5%;
+  background-color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 800;
 }
 
 #logo{
-    width: 12vh;
+  width: 12vh;
 }
 
 .menu{
-    width: 32%;
+  width: 33%;
 }
 
 #dropdown-content,a{
-    display: block;
-    color: black;
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+  display: block;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .icon{
     display: none;
 }
 
+@media only screen and (max-width: 960px){
+  nav{
+      height: 8vh;
+  }
+  .menu{
+      width: 5%;
+      padding: 0% 4% 0% 4%;
+  }
+  #dropdown-content{
+      display: none;
+      position: absolute;
+      flex-direction: row-reverse;
+      top: 8vh;
+      right: 0%;
+      width: 96%;
+      padding: 0% 2% 0% 2%;
+      background-color: #ffffff;
+  }
+  #hr-nav{
+    padding: 0%;
+    margin: 2% 0% 2% 0%;
+  }
+  .box, .box1, .box2{
+      font-size: medium;
+      font-weight: bold;
+  }
+  .icon{
+      display: block;
+  }
+}
+
+/*Navigation-END*/
+
 /* Index page styles */
 .hero{
   height: 55vh;
-  background-image: url(img/summer-streach.webp);
+  background-image: url("/img/strech.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,7 +124,6 @@ nav{
 .deal-text{
   margin-top: 5vh;
 }
-/* --------------------------------------- */
 
 @media only screen and (max-width: 960px){
   .hero{
@@ -112,37 +144,7 @@ nav{
   }
 
 }
-
-
-
-@media only screen and (max-width: 960px){
-    nav{
-        height: 8vh;
-    }
-    .menu{
-        width: 5%;
-        padding: 0% 4% 0% 4%;
-    }
-    #dropdown-content{
-        display: none;
-        position: absolute;
-        flex-direction: row-reverse;
-        top: 8vh;
-        right: 0%;
-        width: 96%;
-        padding: 0% 2% 0% 2%;
-        background-color: #ffffff;
-    }
-    .box, .box1, .box2{
-        font-size: medium;
-        font-weight: bold;
-    }
-    .icon{
-        display: block;
-    }
-}
-
-/*Navigation-END*/
+/* --------------------------------------- */
 
 /* Item page CSS */
 .item-container {
