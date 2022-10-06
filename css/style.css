@@ -85,7 +85,7 @@ nav{
 /* Index page styles */
 .hero{
   height: 55vh;
-  background-image: url("/img/pants.jpg");
+  background-image: url("https://images.pexels.com/photos/2119224/pexels-photo-2119224.jpeg?cs=srgb&dl=pexels-lucas-pezeta-2119224.jpg&fm=jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,6 +103,7 @@ nav{
 
 .hello-text{
   width: 60vh;
+  font-weight: 700;
 }
 
 .info{
