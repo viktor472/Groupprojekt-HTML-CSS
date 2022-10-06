@@ -142,3 +142,68 @@ nav{
 }
 
 /*Navigation-END*/
+
+/*form-style-start*/
+
+body{
+  margin: 0;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+
+}
+
+#container {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+
+#form {
+    width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+.mapouter {
+    margin-top: 5%;
+}
+label {
+    margin: 0.5rem 0;
+    display: block;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 70%;
+}
+
+input[type="submit"] {
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+}
+/* mobil-size */
+@media screen and (max-width: 768px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+/* Tblet-size */
+@media screen and (max-width: 1220px) and (min-width: 769px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+
