@@ -154,10 +154,15 @@ body{
 }
 
 #container {
+    width: 90%;
     display: inline-grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     
-    
+}
+.form-style {
+    justify-content: center;
+    align-items: center;
 }
 
 h1, p {
@@ -165,14 +170,12 @@ h1, p {
     text-align: center;
   }
 
-#form {
-    width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
-  margin: 0 auto;
+form {
+  margin: auto auto;
   padding-bottom: 2em;
+
 }
-.mapouter {
+.map-style {
     margin-top: 5%;
 }
 label {
@@ -206,4 +209,4 @@ input[type="submit"] {
         display: flex;
         flex-direction: column;
     }
-
+}
